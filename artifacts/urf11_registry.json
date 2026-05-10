@@ -1,0 +1,77 @@
+{
+  "artifact": "urf11_translation_subproblem_registry",
+  "status": "URF11_REGISTRY_ONLY",
+  "theorem_closure": false,
+  "registry_schema": {
+    "required_fields": [
+      "id",
+      "source_domain",
+      "target_domain",
+      "translation_rule",
+      "required_assumptions",
+      "frontier_status",
+      "downstream_dependencies",
+      "non_claims"
+    ]
+  },
+  "entries": [
+    {
+      "id": "fo4_constraint_isolation",
+      "source_domain": "finite-variable logic",
+      "target_domain": "cycle-local-rigidity / Cayley-style local-rigidity interfaces",
+      "translation_rule": "FO4 variable-budget assumptions are isolated as a public constraint surface before downstream citation.",
+      "required_assumptions": [
+        "variable_budget = 4",
+        "status = FO4_CONSTRAINT_ISOLATION_ONLY"
+      ],
+      "frontier_status": "CONSTRAINT_ISOLATION_ONLY",
+      "downstream_dependencies": [
+        "cycle-local-rigidity",
+        "vasquez-index",
+        "frontier-status-dashboard"
+      ],
+      "non_claims": [
+        "no unrestricted graph-rigidity theorem",
+        "no unrestricted Cayley-graph rigidity theorem",
+        "no Chronos-RR closure",
+        "no H4.1/FGL closure",
+        "no UniversalFiberEntropyGap theorem",
+        "no P vs NP result",
+        "no Clay-problem closure"
+      ]
+    },
+    {
+      "id": "chronos_selected_carrier_boundary",
+      "source_domain": "Chronos selected final carrier domain",
+      "target_domain": "DepthBridge / H4.1-FGL selected-domain interface",
+      "translation_rule": "Selected-domain closure surfaces may translate only through explicitly registered carrier-domain assumptions.",
+      "required_assumptions": [
+        "FinalCarrierDomain",
+        "selected-carrier boundary",
+        "no unrestricted carrier coverage"
+      ],
+      "frontier_status": "SELECTED_DOMAIN_ONLY",
+      "downstream_dependencies": [
+        "chronos-urf-rr",
+        "frontier-status-dashboard",
+        "vasquez-index"
+      ],
+      "non_claims": [
+        "no unrestricted Chronos-RR closure",
+        "no unrestricted H4.1/FGL closure",
+        "no UniversalFiberEntropyGap theorem",
+        "no P vs NP result",
+        "no Clay-problem closure"
+      ]
+    }
+  ],
+  "global_non_claims": [
+    "no unrestricted Chronos-RR closure",
+    "no H4.1/FGL closure",
+    "no UniversalFiberEntropyGap theorem",
+    "no P vs NP result",
+    "no Clay-problem closure",
+    "no unrestricted graph-rigidity theorem",
+    "no unrestricted Cayley-graph rigidity theorem"
+  ]
+}
