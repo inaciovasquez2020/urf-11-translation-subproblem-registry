@@ -25,13 +25,13 @@ This repository is a registry and translation-control surface only.
 
 It does not prove:
 
-- unrestricted Chronos-RR closure,
-- H4.1/FGL closure,
+- No unrestricted Chronos-RR closure.
+- No H4.1/FGL closure.
 - UniversalFiberEntropyGap,
-- P vs NP,
+- No P vs NP.
 - any Clay-problem result,
-- unrestricted graph-rigidity theorem closure,
-- unrestricted Cayley-graph rigidity theorem closure.
+- No unrestricted graph-rigidity theorem.
+- No unrestricted Cayley-graph rigidity theorem.
 
 ## Source of truth
 
